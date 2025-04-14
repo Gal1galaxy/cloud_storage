@@ -1,0 +1,41 @@
+# Web框架
+Flask
+Flask-RESTful
+Flask-Cors
+gunicorn
+gevent
+
+# 数据库
+Flask-SQLAlchemy
+Flask-Migrate
+SQLAlchemy
+
+# 认证和安全
+Flask-JWT-Extended
+Flask-Login
+bcrypt
+cryptography
+PyJWT
+pycryptodome
+
+# WebSocket
+Flask-SocketIO
+python-socketio
+
+# 文件处理
+python-magic
+Pillow
+PyPDF2
+openpyxl
+python-docx
+pdf2image 
+PyMuPDF
+
+# 工具
+python-dotenv
+requests
+pytest
+pytest-cov 
+pandas
+apscheduler
+pycryptodome
