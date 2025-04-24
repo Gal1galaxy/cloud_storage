@@ -10,7 +10,12 @@ from config import Config
 from flask_jwt_extended import create_access_token
 
 bp = Blueprint('auth', __name__, url_prefix='/api/auth')
+# —— 新增测试路由 —— 
+@bp.route('/test', methods=['GET'])
+def test():
+    return jsonify({'message': 'Auth API working'}), 200
 
+# —— 原有的 register, login, logout, profile 等路由 —— 
 @bp.route('/register', methods=['POST'])
 def register():
     """用户注册"""
