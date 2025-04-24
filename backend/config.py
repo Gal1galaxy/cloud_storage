@@ -6,7 +6,7 @@ class Config:
     # 基础配置
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(os.path.dirname(os.path.dirname(__file__)), 'cloud_storage.db')
+        'sqlite:///' + os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cloud_storage.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # JWT配置
